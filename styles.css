@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Sansita Swashed', cursive;
+  color: #800000;
+  text-align: center;
+  display: block;
+  Margin: auto;
+  font-size: 6em;
+  text-shadow: 2px 2px 5px white;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-family: 'Noto Serif Georgian', serif;
+  Color: #C19A6B;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+  margin-top: auto;
+}
+
+ul,
+ol {
+  margin-top 2px;
+  font-size: 20px;
+}
+
+body {
+  background-color: #F8F0E3;
+}
+
+#titlebanner {
+  background-image: url(https://images.unsplash.com/photo-1602663491496-73f07481dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80);
+      width: 100%;
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+  position:relative;
+   
+}
+#titlebanner h1 {
+font-family: 'Sansita Swashed', cursive;
+  font-size: 6em;
+  padding: 10px;
+  color: #800000;
+  text-align: center;
+  display: block;
+  Margin: auto;
+  text-shadow: 2px 2px 5px white;
+}
+
+
+footer {
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#columns {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: block;
+ 
+}
+
+#columns div {
+  float: left;
+  display: inline-block;
+  position: relative;
+}
+
+#columns div#ingredients {
+  width: 33%;
+}
+
+#columns div#equipment {
+  width: 33%;
+}
+
+#columns div#directions {
+  width: 33%;
+}
+
+#columns #ingredients ul, 
+#columns #equipment ul,
+#columns #directions ol { 
+  display: none; 
+}
+
+#columns #ingredients.tpShow ul,
+#columns #equipment.tpShow ul,
+#columns #directions.tpShow ol {
+  display: block;
+}
+
+
+@media screen and (max-width: 575px) #titlebanner h1 {
+  height: 40vh;
+  }
+
+@media screen and (orientation: portrait) and (max-width: 575px) #columns {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (oriention: landscape) {
+  #columns {
+    width: calc(100vw/3);
+    float: left;
+  }
+}
