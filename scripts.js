@@ -3,7 +3,7 @@ window.onload = function() {
   document.querySelector("#titlebanner h1").classList.add("tp");
   
   document.querySelector("#titlebanner h1").onclick = function() {    
-    this.classList.toggle("yellow");
+    this.classList.toggle("tan");
   }
   
   document.querySelector("#columns #ingredients").onclick = function() {
